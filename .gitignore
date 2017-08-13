@@ -4,6 +4,7 @@
 
 # IntelliJ project files
 
+README.md
 .gitignore
 .idea
 *.iml
