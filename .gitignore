@@ -3,11 +3,8 @@
 ### Example user template
 
 # IntelliJ project files
+.gitignore
 .idea
 *.iml
 out
 gen
-
-
-README.md
-.gitignore
