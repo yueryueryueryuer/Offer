@@ -18,16 +18,15 @@ public class SelectSort {
 
     private static void selectSortArr(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
-            int index = i;
-            int temp = arr[index];
-            for (int j = i + 1; j < arr.length; j++) {
-                if (temp > arr[j]) {
-                    temp = arr[j];
-                    index = j;
+            int index=i;
+            for (int j = i+1; j < arr.length; j++) {
+                if (arr[j]<arr[index]) {
+                    index=j;
                 }
             }
-            arr[index] = arr[i];
-            arr[i] = temp;
+            int temp = arr[i];
+            arr[i]=arr[index];
+            arr[index] =temp;
         }
     }
 }
